@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color: #282828;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -21,4 +22,30 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+.navbar-custom {
+    background-color: #1d1d1d;
+    color: #fff;
+}
+
+.navbar-custom .navbar-header > a {
+    color:#fff;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color:#fff;
+}
+
+.navbar-custom .navbar-nav > li > a:hover, .nav > li > a:focus {
+    background-color: #1d1d1d;
+    text-decoration: underline;
+}
+
+.job {
+    font-size: 8px;
+}
+
+.author {
+    font-size: 24px; 
 }
