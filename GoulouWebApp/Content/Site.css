@@ -72,7 +72,7 @@ a:hover, a:focus {
   display:block;
   padding-left: 30px;
   color: #fff;
-  font-size: 42px;
+  /*font-size: 42px;*/
   font-weight: bold;
   padding: 0px 0px;
 }
@@ -80,8 +80,26 @@ a:hover, a:focus {
 .navbar-brand small {
   margin-top: 10px;
   display:block;
-  font-size: 18px;
+  /*font-size: 18px;*/
   padding-left: 5px;
+}
+
+.navbar-brand-md {
+     font-size: 42px;
+}
+
+.navbar-brand-xs {
+     font-size: 25px;
+     padding-left: 10px;
+}
+
+.navbar-brand-md small {
+    font-size: 18px;
+}
+
+.navbar-brand-xs small {
+     font-size: 13px;
+     margin-top: 0px;
 }
 
 /* Font */
@@ -122,7 +140,7 @@ a:hover, a:focus {
 /*Navbar Toggle*/
 
 .navbar-toggle {
-  margin-top: 22px;
+  margin-top: 15px;
   border-color: #fff;
 }
 
@@ -130,12 +148,37 @@ a:hover, a:focus {
     background-color: white;
 }
 
-.video-container {
-    width: 55%;
+.video-container-md {
+    width: 60%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     /*background: red !important;*/
     /* For testing vertical alignment */
+}
+
+.video-container-sm {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*background: red !important;*/
+    /* For testing vertical alignment */
+}
+
+.video-container-xs {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*background: red !important;*/
+    /* For testing vertical alignment */
+}
+
+.about {
+    color: #fff;
+    padding-top: 100px;
 }
