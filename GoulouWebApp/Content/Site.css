@@ -4,6 +4,7 @@ body {
     padding-bottom: 20px;
     background-color: #282828;
     font-family: Myriad;
+    font-size: 15px;
     background: url('../Content/Images/homepage.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -28,7 +29,12 @@ body {
 input,
 select,
 textarea {
-    max-width: 280px;
+    /*max-width: 280px;*/
+}
+
+p
+{
+   margin: 0 0 15px 0;
 }
 
 /* Navbar */
@@ -181,4 +187,8 @@ a:hover, a:focus {
 .about {
     color: #fff;
     padding-top: 100px;
+}
+
+.paragraph-container {
+    padding-bottom: 15px;
 }

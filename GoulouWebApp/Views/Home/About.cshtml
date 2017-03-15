@@ -3,36 +3,41 @@
 }
 @*<h2>@ViewBag.Title.</h2>
     <h3>@ViewBag.Message</h3>*@
-
 <div class="about">
     <div class="row">
         <div class="col-md-5">
-            <img src="../../Content/Images/about.jpg" class="img-responsive" alt="Responsive image">
-            <p>
-                phone : +33(0)660036219<br>
-                mail : cedric.nivoliez@gmail.com
-            </p>
+            <div class="paragraph-container">
+                <img src="../../Content/Images/about.jpg" class="img-responsive" alt="Responsive image">
+            </div>
+            <div class="paragraph-container">
+                <p>
+                    phone : +33(0)660036219<br>
+                    mail : cedric.nivoliez@gmail.com
+                </p>
+            </div>
         </div>
         <div class="col-md-7">
-            <p>Passioné par l'infographie depuis tout petit j'ai décidé, à la suite d'un BAC STI Electronique, de partir dans le sud de la France pour faire des études de cinéma d'animation & d'effets spéciaux à l'ESMA Montpellier, certifié IPAX (Imageworks Professional Academic Excellence) par Sony Pictures Imageworks</p>
-            <p>A la suite de mes 3 ans de formation et de l'obtention du diplôme d'état de niveau 2, je suis parti travailler à Paris.</p>
-            <p>En plus d'être graphiste généraliste, je suis aussi depuis 4 ans superviseur VFX (studio et tournage)</p>
-            <p>Je travaille principalement en tant qu'intermittant du spectacle mais aussi en tant qu'auto-entrepreneur</p>
-            @*<form>
+            <div class="paragraph-container">
+                <p>Passioné par l'infographie depuis tout petit j'ai décidé, à la suite d'un BAC STI Electronique, de partir dans le sud de la France pour faire des études de cinéma d'animation & d'effets spéciaux à l'ESMA Montpellier, certifié IPAX (Imageworks Professional Academic Excellence) par Sony Pictures Imageworks</p>
+                <p>A la suite de mes 3 ans de formation et de l'obtention du diplôme d'état de niveau 2, je suis parti travailler à Paris.</p>
+                <p>En plus d'être graphiste généraliste, je suis aussi depuis 4 ans superviseur VFX (studio et tournage)</p>
+                <p>Je travaille principalement en tant qu'intermittant du spectacle mais aussi en tant qu'auto-entrepreneur</p>
+            </div>
+            <form>
                 <div class="form-group">
-                    <label for="email">Email address:</label>
+                    <label for="email">Email address *</label>
                     <input type="email" class="form-control" id="email">
                 </div>
                 <div class="form-group">
-                    <label for="pwd">Password:</label>
+                    <label for="pwd">Subject *</label>
                     <input type="password" class="form-control" id="pwd">
                 </div>
-                <div class="checkbox">
-                    <label><input type="checkbox"> Remember me</label>
+                <div class="form-group">
+                    <label for="pwd">Message *</label>
+                    <textarea class="form-control" rows="3" id="comment"></textarea>
                 </div>
                 <button type="submit" class="btn btn-default">Submit</button>
-            </form>*@
+            </form>
         </div>
     </div>
 </div>
-
