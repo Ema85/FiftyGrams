@@ -3,7 +3,7 @@ body {
     /*padding-top: 150px;*/
     padding-bottom: 20px;
     background-color: #282828;
-    font-family: Myriad;
+    font-family: 'Montserrat';
     font-size: 15px;
     background: url('../Content/Images/homepage.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -81,6 +81,7 @@ a:hover, a:focus {
   /*font-size: 42px;*/
   font-weight: bold;
   padding: 0px 0px;
+  font-family: 'Pt';
 }
 
 .navbar-brand small {
@@ -114,11 +115,33 @@ a:hover, a:focus {
     font-family: 'Myriad';
     src: url('../fonts/myriad.OTF'); /*/ IE9 Compat Modes /*/
     src: url('../fonts/myriad.OTF?#iefix') format('embedded-opentype'), /*/ IE6-IE8 /*/
-    /*url('../fonts/LatoLatin-Bold.woff2') format('woff2'), / Modern Browsers /
-    url('../fonts/LatoLatin-Bold.woff') format('woff'), / Modern Browsers /*/
     url('../fonts/myriad.OTF') format('truetype');
     font-style: normal;
     font-weight: bold;
+ }
+
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat.ttf'); /*/ IE9 Compat Modes /*/
+    src: url('../fonts/montserrat.ttf?#iefix') format('embedded-opentype'), /*/ IE6-IE8 /*/
+    url('../fonts/montserrat.ttf') format('truetype');
+    font-style: normal;
+ }
+
+ @font-face {
+    font-family: 'Adam';
+    src: url('../fonts/adam.otf'); /*/ IE9 Compat Modes /*/
+    src: url('../fonts/adam.otf?#iefix') format('embedded-opentype'), /*/ IE6-IE8 /*/
+    url('../fonts/adam.otf') format('truetype');
+    font-style: normal;
+ }
+
+  @font-face {
+    font-family: 'Pt';
+    src: url('../fonts/pt.ttf'); /*/ IE9 Compat Modes /*/
+    src: url('../fonts/pt.ttf?#iefix') format('embedded-opentype'), /*/ IE6-IE8 /*/
+    url('../fonts/pt.ttf') format('truetype');
+    font-style: normal;
  }
 
  /*Video*/
@@ -187,6 +210,7 @@ a:hover, a:focus {
 .about {
     color: #fff;
     padding-top: 100px;
+    font-family: 'Pt';
 }
 
 .paragraph-container {
