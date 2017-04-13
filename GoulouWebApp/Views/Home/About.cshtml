@@ -1,4 +1,5 @@
-﻿@{
+﻿@model GoulouWebApp.Models.AboutViewModel
+@{
     ViewBag.Title = "About";
 }
 @*<h2>@ViewBag.Title.</h2>
@@ -23,21 +24,25 @@
                 <p>En plus d'être graphiste généraliste, je suis aussi depuis 4 ans superviseur VFX (studio et tournage)</p>
                 <p>Je travaille principalement en tant qu'intermittant du spectacle mais aussi en tant qu'auto-entrepreneur</p>
             </div>
-            <form>
-                <div class="form-group">
-                    <label for="email">Email address *</label>
-                    <input type="email" class="form-control" id="email">
-                </div>
-                <div class="form-group">
-                    <label for="pwd">Subject *</label>
-                    <input type="password" class="form-control" id="pwd">
-                </div>
-                <div class="form-group">
-                    <label for="pwd">Message *</label>
-                    <textarea class="form-control" rows="3" id="comment"></textarea>
-                </div>
-                <button type="submit" class="btn btn-default">Submit</button>
-            </form>
+            @using (Html.BeginForm("About", "Home", FormMethod.Post, new { role = "form" }))
+            {
+                @Html.AntiForgeryToken()
+                <form>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Email, new {@class = "control-label"})
+                        @Html.TextBoxFor(m => m.Email, new {@class = "form-control"})
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Subject, new {@class = "control-label"})
+                        @Html.TextBoxFor(m => m.Subject, new {@class = "form-control"})
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Message, new {@class = "control-label"})
+                        @Html.TextAreaFor(m => m.Message, new {@class = "form-control" })
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+            }
         </div>
     </div>
 </div>
